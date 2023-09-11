@@ -1,9 +1,10 @@
 [package]
-name = "hello_world"
-version = "0.0.1"
-
-[dependencies]
-Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
-
+name = 'Homework6'
+version = '1.0.0'
 [addresses]
-hello_world = "0x0"
+basic_address = '0x2af1a9a6248897004a35923659c21ac6021a461d169473e9360b972c767f0484'
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core.git'
+rev = 'mainnet'
+subdir = 'aptos-move/framework/aptos-framework'
